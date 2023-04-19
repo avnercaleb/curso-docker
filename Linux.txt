@@ -1,0 +1,36 @@
+- Comando Linux essenciais
+
+	whoami -> identifica o usuario logado
+	ls -> lista os arquivos contidos no diretorio principal
+	echo -> escreve no terminal
+	echo $0 -> identifica o diretorio atual
+	history -> lista os comandos q ja foram digitados no terminal
+
+- Gerenciando aplicativos com Linux
+
+	O gerenciamento de apps com Linux e feito atraves do apt (Advanced Program Tool)
+
+	apt list -> lista os package instalados na maquina
+	apt update -> acessa o ubuntu e baixa os packages mais utilizados e mais atualizados
+	apt install [nome do package] -> instala o package na maquina
+	apt remove [nome do package] -> remove o package da maquina
+
+- Navegando no Linux
+
+	pwd -> escreve na tela o endereço do diretorio atual
+	ls -1 -> lista os arquivos do diretorio de forma vertical
+	ls -l -> lista os arquivos do diretorio com informações detalhadas
+	cd /[nome da pasta] -> acessa o diretorio especificado
+
+- Criando arquivos e diretorios no Linux
+	
+	mkdir [nome do diretorio] -> cria um novo diretorio
+	rm -r [nome do diretorio] -> remove o diretorio especificado
+	mv [nome antigo] [novo nome] -> renomeia um diretorio
+	touch [nome do arquivo].formato-do-arquivo -> cria um arquivo com o nome e o formato passado 
+	rm [nome do arquivo] -> remove o arquivo especificado
+	
+
+	
+
+	

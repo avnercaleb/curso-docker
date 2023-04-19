@@ -1,0 +1,45 @@
+- Docker
+	- Plataforma criada para construir, rodar e transferir aplicações de nosso ambiente de desenvolvimento ou testes,
+	para o ambiente de produção.
+
+	- Foi criado pra resolver problemas de compatibilidade de aqrquivos, versões de software e configs entre a maquina
+	local e o servidor
+
+	- Com o docker, pegamos a nossa aplicação e todos os recursos necessarios pra ela rodar e colocamos em um container
+	  contruimos nossa aplicação, rodamos em um container, depois fazemos um upload desse container para um servidor
+
+	- Uma das vantagens do uso do docker, e que podemos desenvolver aplicações em qualquer sistema operacional, e fazer
+	  o upload pra um servidor com sistema operacional diferente. Pq o container ira carregar todos os arquivos, versoes
+	  corretas das dependencias do projeto e as configurações do ambiente local
+
+- Diferenças Maquinas Virtuais x Containers
+
+	-  VM's 
+
+		- Dentro de um servidor, temos a parte de hardware (disco, memoria, processamento, placa de rede). Na virtualização
+		  instalamos um Hypervisor (VMware, Virtual Box, Hyper V). Por intermedio desse hipervisor, podemos instalar
+		  outros sistemas operacionais. A grande diferença e desvantagem e que, os recursos do hardware original, são compartilhados 
+		  entre eles, ja que o Hypervisor, simula o hardware original. Isso limita a quantidade de VM's quem podem ser criadas.
+
+	- Containers
+
+		- A grande vantagem dos containers, e que eles são processos isolados, logo usam todos os recursos de hardware disponiveis
+
+- Como o docker Funciona
+
+	- Para que possamos "dockerizar" uma aplicação (back, front e db), precisamos um criar dentro dela um arquivo chamado DOCKERFILE,
+	  dentro desse arquivo, colocaremos os parametros para que a imagem da aplicação possa ser criada. O DOCKERFILE e o responsavel por
+	  transformar a aplicação em uma imagem. Dentro dessa imagem, vai um pedaço do OS, um ambiente, os arquivos da aplicação, as dependencias
+	  e as variaveis de ambiente. A partir disso, podemos pegar essa imagem e coloca-la em um container. Esse container agora pode ser 
+	  enviado pra um servidor que esteja rodando o docker e ser executado.
+
+- Docker Hub
+
+	-  Repositorio de imagens docker
+
+- Docker File
+
+	- FROM -> identifica qual sera a plataforma da aplicação e o sistema operacional
+	- COPY -> copia tudo que tem no diretorio (e preciso adicionar o . pra identificar o diretorio atual) /[nome do diretorio criado na imagem]
+	- WORKDIR -> indica o diretorio que sera usado dentro da imagem	
+	- CMD -> indica o comando que sera executado quando o container rodar 

@@ -29,6 +29,44 @@
 	mv [nome antigo] [novo nome] -> renomeia um diretorio
 	touch [nome do arquivo].formato-do-arquivo -> cria um arquivo com o nome e o formato passado 
 	rm [nome do arquivo] -> remove o arquivo especificado
+	cat [nome do arquivo] -> exibe o conteudo do arquivo
+	cat [nome do arquivo] [nome do arquivo] -> gera um novo arquivo com o mesmo conteudo do arquivo origem
+
+- Utilizando o GREP (Global Regular Expression Print)
+
+	Serve pra localizar conteudo dentro de um arquivo sem precisar abri-lo
+
+	grep[expressão procurada] [arquivo] -> faz uma busca dentro do arquivo, da expressão passada
+
+- Gerenciando Processos
+
+	ps -> lista os processos em execução
+	sleep [tempo em segundos] -> não responde a linha de comando pelo tempo passado
+	kill [id do processo] -> para o processo com o id passado
+
+- Gerenciando Usuarios
+
+	useradd [nome do usuario] -> cria um novo usuario
+	usermod [nome do usuario] -> modifica o usuario
+	userdel [nome do usuario] -> deleta o usuario
+
+- Gerenciando grupos
+	
+	groupadd [nome do grupo] -> cria um grupo
+	groupmod [nome do grupo] -> modifica um grupo
+	groupdel [nome do grupo] -> deleta um grupo	
+	groups [nome do usuario] -> mostra a quais grupos o usuario passado pertence
+
+- Permissão de arquivos
+
+	 
+
+	
+	
+
+	
+
+	
 	
 
 	

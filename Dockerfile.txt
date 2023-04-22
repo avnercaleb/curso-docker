@@ -1,0 +1,25 @@
+- Images
+
+  - Contem tudo que e necessario para sua aplicação rodar
+
+	- Cut-Down OS (tem seu sistema operacional adicionado)
+	- Bibliotecas
+	- Arquivos
+	- Variaveis de ambiente
+
+- Container
+
+  - E um ambiente isolado, pode ser iniciado e parado
+
+- Dockerfile
+
+  - Arquivo necessario pra geração da imagem da aplicação. 
+
+	- FROM -> indica o ambiente em que sera gerada a imagem
+	- WORKDIR -> indica a pasta root da aplicação
+	- COPY / ADD -> servem pra copiar ou adicionar todos o conteudo da aplicação, para a imagem
+	- RUN -> coloca a aplicação em funcionamento
+	- ENV -> configurações do ambiente
+	- EXPOSE -> edita a porta em que a aplicação sera executada
+	- USER -> indica o usuario quem ira usar a aplicação
+	- CMD / ENTRYPOINT -> executa comandos dentro da aplicação
